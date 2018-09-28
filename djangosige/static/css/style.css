@@ -45,7 +45,9 @@
 
 /* Theme =======================================*/
 .theme .navbar {
-  background-color:#248fbf; }
+  /*background-color:#248fbf;*/
+  background-color: var(--main-color);
+}
 
 .theme .navbar-brand {
   color: #fff; }
@@ -782,7 +784,8 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 .dataTables_wrapper .dataTables_paginate .paginate_button.current, 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
   color: #fff !important;
-  background-color: #248fbf;
+  /*background-color: #248fbf;*/
+  background-color: var(--main-color);
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, 
@@ -1421,7 +1424,9 @@ fieldset[disabled] .form-control {
 
 /* Pagina inicial =========================== */
 .inicial-card .header{
-  background-color: #248fbf; }
+  /*background-color: #248fbf;*/
+  background-color: var(--main-color);
+}
 .inicial-card .header h2, .inicial-card .header small{
   color:white; }
 .inicial-card .body{

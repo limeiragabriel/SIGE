@@ -31,5 +31,5 @@ class BaseViewsTestCase(BaseTestCase):
             self.assertTemplateUsed(response, '500.html')
             self.assertEqual(response.status_code, 500)
         else:
-            self.assertTemplateUsed(response, '404.html')
-            self.assertEqual(response.status_code, 404)
+            self.assertTemplateUsed(response, '500.html')
+            self.assertEqual(response.status_code, 500)

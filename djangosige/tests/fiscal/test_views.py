@@ -88,7 +88,7 @@ class FiscalAdicionarViewsTestCase(BaseTestCase):
         dhatual = timezone.now().strftime('%d/%m/%Y %H:%M')
 
         data = {
-            'versao': '3.10',
+            'versao': '4.0',
             'natop': 'Natureza qualquer',
             'indpag': '0',
             'mod': '55',
@@ -206,7 +206,7 @@ class FiscalEditarViewsTestCase(BaseTestCase):
         response = self.client.post(url, data, follow=True)
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(
-            response, 'fiscal/nota_fiscal/nota_fiscal_list.html')
+            response, 'fiscal/nota_fiscal/nota_fiscal_edit.html')
 
         # Assert form invalido
         data['natop'] = ''
@@ -228,7 +228,7 @@ class FiscalEditarViewsTestCase(BaseTestCase):
         response = self.client.post(url, data, follow=True)
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(
-            response, 'fiscal/nota_fiscal/nota_fiscal_list.html')
+            response, 'fiscal/nota_fiscal/nota_fiscal_edit.html')
 
         # Assert form invalido
         data['natop'] = ''
